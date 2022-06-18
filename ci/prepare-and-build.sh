@@ -10,6 +10,8 @@ wget https://github.com/kwrx/aplus-toolchain/releases/latest/download/x86_64-apl
 tar xJf x86_64-aplus-toolchain.tar.xz
 popd
 
+git clone https://www.github.com/kwrx/aplus --depth=1
+
 export PATH=$(pwd)/sdk/bin:$PATH
 
 

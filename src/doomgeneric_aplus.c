@@ -28,13 +28,13 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stddef.h>
 #include <string.h>
 #include <unistd.h>
 #include <fcntl.h>
 #include <getopt.h>
 #include <errno.h>
 #include <assert.h>
-#include <libtsm.h>
 #include <poll.h>
 #include <sched.h>
 

@@ -11,7 +11,9 @@ HDRS=$(shell find src -name '*.h')
 
 
 all: $(OUTPUT)
-	$(CC) -o $(OUTPUT) $(SRCS) $(HDRS)
+
+$(OUTPUT): $(SRCS) $(HDRS)
+	$(CC) -o $(OUTPUT) $(SRCS) -L src -L aplus/include -Wl,--gc-sections -DNORMALUNIX -DLINUX -DSNDSERV -D_DEFAULT_SOURCE
 
 install: $(OUTPUT)
 	mkdir -p $(DESTDIR)/usr
