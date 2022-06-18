@@ -21,4 +21,4 @@ make DESTDIR=$(pwd)/dist install
 
 echo "### Package"
 
-tar -C dist -cJf doom.tar.xz .pkg
+tar -C dist -cJf doom.tar.xz
