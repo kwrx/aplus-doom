@@ -22,4 +22,5 @@ make CC=x86_64-aplus-gcc DESTDIR=$(pwd)/dist -j$(nproc) install
 
 echo "### Package"
 
-tar -C dist -cJf doom.tar.xz
+tar -cJf doom.tar.xz -C dist .
+
